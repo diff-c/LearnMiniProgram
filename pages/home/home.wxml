@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<text>我是首页</text>
+
+
+<!-- 获取用户信息方式2 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="authorize">授权</button>
+
+
+<!-- 获取用户信息方式3 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userGender"></open-data>
