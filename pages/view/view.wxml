@@ -1,0 +1,19 @@
+<!--pages/view/view.wxml-->
+
+<!-- 1.view基本使用 -->
+<!-- 默认占1行，类似div的块级元素 -->
+<view></view>
+
+<!-- view有四个属性 -->
+
+<!-- 
+
+  hover-class
+  hover-stay-time
+  hover-start-time
+  hover-stop-propagation
+ -->
+
+<view hover-class="active" class="box" hover-stay-time="10000" hover-start-time="3000">
+  <view class="box2" hover-stop-propagation></view>
+</view>

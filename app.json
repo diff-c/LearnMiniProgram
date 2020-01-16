@@ -1,10 +1,14 @@
 {
   "pages": [
+    "pages/view/view",
+    "pages/button/button",
+    "pages/text/text",
     "pages/home/home",
     "pages/category/category",
     "pages/profile/profile",
     "pages/cart/cart",
     "pages/test/test"
+   
   ],
   "sitemapLocation": "sitemap36.json",
   "window": {
