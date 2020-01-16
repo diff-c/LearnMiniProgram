@@ -1,0 +1,25 @@
+<!--pages/text/text.wxml-->
+
+<!-- 1.基本使用 -->
+<text>Hello World\n</text>
+<text>你好小程序\n</text>
+
+<!-- 2.selectable:true -->
+<!-- 默认情况下,文本是不可以选中的 -->
+
+<text selectable="{{false}}">Hello diff\n</text>
+
+<!-- 3.space:绝对文本空格的大小 -->
+<!-- 
+  nbsp:根据字体设置的空格大小
+  emsp：中文字符空格大小
+  ensp:中文字符空格一半大小
+ -->
+<text space="nbsp"></text>
+<text space="emsp"></text>
+<text space="ensp"></text>
+
+<!-- 4.decode：是否解码文本 -->
+<!-- 两种写法 -->
+<text decode="{{true}}">5 &gt; 3\n</text>
+<text decode>5 &gt; 3</text>

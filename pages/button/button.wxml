@@ -1,0 +1,27 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button基本使用 -->
+<button>点击</button>
+
+<!-- 2.size属性:mini -->
+<button size="mini">按钮2</button>
+<button size="mini">按钮2</button>
+
+<!-- 3.type属性 -->
+<button size="mini" type="default">按钮2</button>
+<button size="mini" type="warn">按钮2</button>
+<button size="mini" type="">按钮2</button>
+
+
+<!-- 4.plain属性：按钮镂空 -->
+<button size="mini" type="warn" plain>按钮2</button>
+
+<!-- 5.disabled -->
+<button size="mini" disabled>无法点击？</button>
+
+<!-- 6.hover-class:鼠标环绕组件时的样式 -->
+<button hover-class="change">变样</button>
+
+<!-- 7.loading -->
+<button loading="{{isLoading}}">loading</button>
+
+<button bindtap="changeLoad">改变loading事件</button>

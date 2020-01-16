@@ -1,0 +1,22 @@
+<!-- 1.image的基本使用 -->
+<!-- 
+  重点：
+    1.image组件可以写成单标签，也可以修成双标签
+    2.image组件默认有自己的大小 320*240
+ -->
+ 
+ <image src="../../assets/tabbar/home.png" />
+ <image src="/assets/tabbar/home.png" />
+
+<button bindtap="chooseImage">选中图片</button>
+
+<image lazy-load src="{{imageUrl}}"/>
+
+
+<image wx:for="{{10}}" wx:key="item" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579168863632&di=73bb6869d50822c227324a7bf2c1aa85&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F5ab5c9ea15ce36d355b86e3f3bf33a87e950b105.jpg"  bindload="imageLoad" lazy-load/>
+
+
+<!-- show-menu-by-longpress会弹出一个扫小程序码的菜单 -->
+<image show-menu-by-longpress src="{{imageUrl}}"></image>
+
+<!-- image的属性mode：图片裁剪、缩放的模式-->
