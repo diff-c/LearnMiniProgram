@@ -1,0 +1,23 @@
+
+<view wx:if="{{age>=22}}">
+  成年人
+</view>
+<view wx:else>
+  未成年
+</view>
+
+<view>{{age>=18?"成年人":"未成年人"}}</view>
+<view>{{nowTime}}</view>
+
+<button bindtap="btnClick">点击</button>
+<view class="box {{isActive ? 'active': ''}}">哈哈哈</view>
+
+<view>--------------------</view>
+<!-- template的使用，为了代码的复用 -->
+<!-- <include src="/template/abc.wxml" /> -->
+<include src="/template/footer.wxml" />
+<import src="/template/template.wxml" />
+
+<template is="tmp" data="{{text:'文本',click:'点击'}}"/>
+<template is="tmp" data="{{text:'按钮',click:'不点击'}}"/>
+<template is="tmp" data="{{text:'点击文本',click:'不点击文本'}}"/>

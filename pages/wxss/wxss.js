@@ -1,7 +1,4 @@
-// pages/home/home.js
-const app = getApp();
-// console.log(app.globalData.name);
-// console.log(app.globalData.age)
+// pages/wxss/wxss.js
 Page({
 
   /**
@@ -10,14 +7,12 @@ Page({
   data: {
 
   },
-  authorize(event) {
-    // console.log(event.detail.userInfo)
-  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
   },
 
   /**

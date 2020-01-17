@@ -1,0 +1,4 @@
+
+<view>
+<include src="./abc.wxml" />
+123</view>

@@ -1,0 +1,17 @@
+<!-- wxs的演练 -->
+
+<!-- 对价格的演练 -->
+
+<wxs module="info">
+  //只能使用ES5语法，不能使用ES6
+  var totalPrice = function(price, number) {
+    var number = number || 2;
+    return price.toFixed(number)
+  }
+  module.exports = {
+    totalPrice:totalPrice
+  }
+</wxs>
+
+<view>{{info.totalPrice(price)}}</view>
+<view>{{info.totalPrice(price,3)}}</view>

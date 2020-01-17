@@ -1,23 +1,18 @@
-// pages/home/home.js
-const app = getApp();
-// console.log(app.globalData.name);
-// console.log(app.globalData.age)
+// pages/wxs/wsx.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  authorize(event) {
-    // console.log(event.detail.userInfo)
+    price: 25.66666
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
   },
 
   /**

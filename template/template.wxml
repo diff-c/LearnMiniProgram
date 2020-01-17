@@ -1,0 +1,6 @@
+<include src="./abc.wxml" />
+
+<template name="tmp">
+<view>{{text}}</view>
+<button>{{click}}</button>
+</template>
