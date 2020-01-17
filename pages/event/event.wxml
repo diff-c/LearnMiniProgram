@@ -1,0 +1,50 @@
+<!-- 
+  常见的事件类型：
+        bindtouchstart
+        bindtouchend
+        bindtouchmvoe
+        bindtap
+        bindlongpress
+        bindcancel  //在某些特定场景才会触发(比如来电打断等）
+ -->
+
+<button bind:touchstart="touchstart" catch:touchmove="touchmove" bind:touchend="touchend" bindlongpress="bindlongpress" bindtap="bindtap" class="box">点击</button>
+
+<!-- 2.事件对象解析 -->
+<button bindtap="btnClick" bind:touchend="findDiff">解析事件对象</button>
+
+<!-- 
+  touches和changedTouches区别
+    多手指控制的时候
+    touchend事件
+  currentTarget和target区别
+    currentTarget
+    target
+ -->
+
+
+<!-- 3.事件参数的传递 -->
+<button bindtap="passParams" data-age="18" data-name="diff">
+  事件参数传递</button>
+
+
+<!-- 4.事件捕获和事件冒泡 -->
+
+<!-- 
+事件捕获阶段  capture-bind:tap  capture-catch:tap可以阻止事件捕获
+事件冒泡阶段  bind:tap  catch:tap 可以阻止事件冒泡
+ -->
+
+<view class="view1" capture-bind:tap="view1" bind:tap="tap1">
+  <view class="view2" capture-bind:tap="view2" bind:tap="tap2">
+    <view class="view3" capture-bind:tap="view3" bind:tap="tap3"></view>
+  </view>
+</view>
+
+
+<!-- 测试target和currentTarget区别 -->
+
+<view id="father" bind:tap="fatherEvent">
+father 
+<view id="son" bind-tap="sonEvent">son</view>
+</view>

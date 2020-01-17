@@ -1,0 +1,22 @@
+/* pages/event/event.wxss */
+
+.box {
+  width: 300rpx;
+  height: 300rpx;
+  background-color: red;
+}
+.view1 {
+  height:300rpx;
+  width: 300rpx;
+  background-color: green;
+}
+.view2 {
+  height:200rpx;
+  width: 200rpx;
+  background-color: blue;
+}
+.view3 {
+  height:100rpx;
+  width: 100rpx;
+  background-color: red;
+}
